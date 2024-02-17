@@ -56,3 +56,51 @@ body {
     
     color:white ;
   }
+  /*Setup of personal card container*/
+.pcard {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: lightseagreen;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.pcard p, h2{
+  margin:0 ;
+}
+.pcard h2{
+  font-size: 2em;
+  line-height: 1.5em;
+}
+/*Personal header and footer*/
+.pcard header {
+background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+border-radius: 0 0 1.5em 1.5em;
+}
+.pcard footer {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+.pcard header, footer{
+  height:3em ;
+  padding: 1em;
+}
+.pcard footer p{
+  font-size: 1.5em ;
+  line-height: 1.5em;
+}
+/*main Personalbusiness card content*/
+.pcard article img{
+  max-height: 100% ;
+  float:right ;
+}
+.pcard article {
+  height:12em ;
+  background-color: rgba(0,0,0,0.25);
+}
+.pcard article p {
+  padding:1em ;
+  
+  color:white ;
+}
