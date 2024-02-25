@@ -39,16 +39,28 @@
 }
 .espn{
     position:absolute;
-    text-align: center;
     right: 25px;
     bottom: 0px;
 }
+
 .name{
     filter: drop-shadow(10px 10px 3px black);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     color: red;
-    font-size: 60px;
+    font-size: 40px;
+    padding-left:400px;
+    padding-bottom: 25px;
+}
+
+.logo{
+    background: url(premlogo.png) no-repeat center center;
+    position:relative;
+    scale: 25%;
+    width:500px ;
+    height:500px ;
+    top: 265px;
+    left:100px;
 }
 
 .overlay1 {
@@ -57,9 +69,4 @@
     width:100vw;
     height:100vh;
     margin:auto ;
-}
-.logo{
-    background: url(premlogo.png) no-repeat right bottom;
-    width:500px ;
-    height:500px ;
 }
