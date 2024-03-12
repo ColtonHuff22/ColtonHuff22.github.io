@@ -28,8 +28,7 @@ p {
         display:grid ;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto ;
-        grid-gap: 5px;
-        background-color:brown;
+        grid-gap: 5px;      
   }
 
 
