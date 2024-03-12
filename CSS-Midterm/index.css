@@ -1,0 +1,59 @@
+body {
+    background-color: antiquewhite;
+    margin:2.5% ;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Intro {
+    background-color:brown;
+}
+.grid {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display:grid ;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto ;
+        grid-gap: 5px;
+        background-color:brown;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+    nav ul{
+      flex-direction: column;
+    }
+    .grid {
+      flex-direction: column;
+    }
+    .photos {
+      display: block;
+    }
+  }
