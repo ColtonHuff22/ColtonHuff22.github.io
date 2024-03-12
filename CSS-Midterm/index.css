@@ -44,6 +44,7 @@ header p{
     padding-bottom: 1%;
     font-weight: lighter;
     font-size: 16px;
+    color:
 }
 .grid {
         margin: 0;
@@ -57,6 +58,7 @@ div {
     background-color:burlywood;
     padding:1% ;
 }
+
 
 
 @media screen and (max-width:400px) {
