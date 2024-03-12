@@ -4,25 +4,37 @@ body {
 }
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    background-color: darkred;
 }
 h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:normal;
 }
 h4 {
     font-family: Arial, Helvetica, sans-serif;
-    font-style: bold;
+    font-weight:bold;
+    font-size: medium;
+    padding: 0%;
+    margin:2px ;
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding: 0%;
 }
 header {
     background-color:brown;
+    position: sticky;
+    top: 2px;
+}
+header p{
+    padding-left: 5%;
 }
 .grid {
-        list-style: none;
         margin: 0;
         padding: 0;
         display:grid ;
@@ -30,21 +42,18 @@ header {
         grid-template-rows: auto auto auto ;
         grid-gap: 5px;      
   }
-  div {
+div {
     background-color:burlywood;
     padding:1% ;
-  }
+}
 
 
 @media screen and (max-width:400px) {
-    nav ul{
-      flex-direction: column;
-    }
     .grid {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
     }
-    .photos {
-      display: block;
+    header {
+        position:relative;
     }
   }
