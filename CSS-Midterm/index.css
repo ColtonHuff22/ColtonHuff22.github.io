@@ -1,24 +1,30 @@
 body {
     background-color: antiquewhite;
-    margin:2.5% ;
+    margin: 0%;
 }
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-size: 45px;
-    color: white;
-    background-color: darkred;
+    color: antiquewhite;
+    text-align: center;
+    margin: 0px ;
+    padding: 5px ;
 }
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     position: sticky;
-    top:183px ;
+    top:112px ;
     background-color: burlywood;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
 }
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-style:italic;
     font-weight: lighter;
     color:darkred ;
+    font-size: 25px;
 }
 h4 {
     font-family: Arial, Helvetica, sans-serif;
@@ -32,30 +38,37 @@ p {
     font-size: small;
     padding: 0%;
     text-align: justify;
+    font-size: 19px ;
 }
 header {
-    background-color:brown;
     position: sticky;
-    top: 2px;
+    top: 0px;
+    margin: 0%;
+    padding: 2.5% ;
+    background-color: darkred;
 }
-header p{
+nav{
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 1%;
+    padding-top: 5px ;
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 90px;
+    color: lightgray;
+    background-color:brown;
+
 }
 .grid {
-        margin: 0;
-        padding: 0;
+        margin:2.5% ;
+        padding: 0px;
         display:grid ;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto ;
-        grid-gap: 5px;      
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto auto;
+        grid-gap: 2.5%;      
   }
 div {
     background-color:burlywood;
-    padding:1% ;
+    padding:5% ;
 }
 
 
@@ -64,8 +77,12 @@ div {
     .grid {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-gap:.4% ;
     }
     header {
         position:relative;
+    }
+    h2 {
+        top: 0px;
     }
   }
