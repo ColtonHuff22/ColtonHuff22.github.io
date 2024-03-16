@@ -4,7 +4,7 @@ body {
 }
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-size: 45px;
+    font-size: 4vw;
     color: antiquewhite;
     text-align: center;
     margin: 0px ;
@@ -13,9 +13,9 @@ h1 {
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     position: sticky;
-    top:112px ;
+    top:9.25vw ;
     background-color: burlywood;
-    padding: 10px;
+    padding: 1vw;
     font-size: 30px;
     text-align: center;
 }
@@ -29,13 +29,12 @@ h3 {
 h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight:bold;
-    font-size: medium;
+    font-size: 22px;
     padding: 0%;
     margin:2px ;
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
     padding: 0%;
     text-align: justify;
     font-size: 19px ;
@@ -44,8 +43,9 @@ header {
     position: sticky;
     top: 0px;
     margin: 0%;
-    padding: 2.5% ;
+    padding: 2.5vw ;
     background-color: darkred;
+    z-index: 999;
 }
 nav{
     padding-left: 5%;
@@ -64,13 +64,31 @@ nav{
         display:grid ;
         grid-template-columns: auto auto ;
         grid-template-rows: auto auto auto auto auto;
-        grid-gap: 2.5%;      
+        grid-gap: 2vw;      
   }
 div {
     background-color:burlywood;
     padding:5% ;
 }
-
+.show9 {
+    grid-column: 1 / span 2 ;
+}
+footer{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    padding-top: 5px ;
+    font-weight: lighter;
+    font-size: 90px;
+    color: lightgray;
+    background-color:brown;
+}
+footer h2{
+    background-color: brown;
+}
+footer h4 {
+    text-align: center;
+}
 
 
 @media screen and (max-width:400px) {
@@ -82,7 +100,16 @@ div {
     header {
         position:relative;
     }
+    h1 {
+        font-size: 30px;
+    }
     h2 {
         top: 0px;
+    }
+    .show9 {
+        grid-column: auto ;
+    }
+    footer {
+        margin-top: .5%;
     }
   }
