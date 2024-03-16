@@ -90,7 +90,7 @@ footer h4 {
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:400px) {
     .show9 {
         grid-column: auto ;
         position: relative ;
