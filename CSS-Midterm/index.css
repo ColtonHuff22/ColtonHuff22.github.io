@@ -13,7 +13,7 @@ h1 {
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     position: sticky;
-    top:9.25vw ;
+    top:9vw ;
     background-color: burlywood;
     padding: 1vw;
     font-size: 30px;
@@ -43,7 +43,7 @@ header {
     position: sticky;
     top: 0px;
     margin: 0%;
-    padding: 2.5vw ;
+    padding: 2vw ;
     background-color: darkred;
     z-index: 999;
 }
@@ -79,7 +79,6 @@ footer{
     padding-bottom: 1%;
     padding-top: 5px ;
     font-weight: lighter;
-    font-size: 90px;
     color: lightgray;
     background-color:brown;
 }
@@ -92,10 +91,14 @@ footer h4 {
 
 
 @media screen and (max-width:400px) {
+    .show9 {
+        grid-column: auto ;
+        position: relative ;
+        
+    }
     .grid {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
-        grid-gap:.4% ;
     }
     header {
         position:relative;
@@ -106,10 +109,8 @@ footer h4 {
     h2 {
         top: 0px;
     }
-    .show9 {
-        grid-column: auto ;
-    }
     footer {
-        margin-top: .5%;
+        margin-top: 5%;
+        position: relative;
     }
   }
