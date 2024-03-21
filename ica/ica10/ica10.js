@@ -1,7 +1,7 @@
 
 const heading = document.querySelector("h1") ;
 
-const button1=document.getElementsByClassName("button1") ;
+const button1=document.querySelector("button") ;
 button1.addEventListener('click',changeText) ;
 
 const button2=document.getElementById("button2") ;
@@ -15,5 +15,6 @@ function changeText() {
     heading.textContent= `Sko ${name}` ;
 }
 function changeItem() {
-    
+    document.getElementById("button2").style.backgroundColor = "yellow" ;
+    button2.textContent= `LETSSS GOOO`
 }
