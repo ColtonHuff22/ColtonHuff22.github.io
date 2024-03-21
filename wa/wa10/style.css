@@ -1,0 +1,36 @@
+body {
+    font-family: helvetica, sans-serif;
+    width: 600px;
+    text-align: center;
+    margin:auto ;
+    margin-top: 10vw;
+    background-color:cornsilk;
+  }
+
+  label {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+  div {
+    padding-bottom: 20px;
+    background-color:#5e2612;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    width: 150px;
+    background-color: silver;
+  }
+
+  p {
+    background-color: burlywood;
+    color: #5e2612;
+    padding: 10px;
+    visibility: hidden;
+  }
+  button {
+    background-color: black;
+    color: white ;
+  }
