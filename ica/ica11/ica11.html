@@ -32,7 +32,9 @@
         font-size: 1.1rem;
         color: #aaa;
       }
-
+      .backgroundImage {
+        size: 1%;
+      }
     </style>
   </head>
   <body>
@@ -70,11 +72,11 @@
             
             
             if (msgType === "warning") {
-            msg.style.backgroundImage = "url(icons/warning.png)";  //change!!
-            panel.style.backgroundColor = "red";  //change!!
+            msg.style.backgroundImage = 'url(warning.jpg)' ;  //change!!
+            panel.style.backgroundColor = "yellow";  
             } else if (msgType === "chat") {
-            msg.style.backgroundImage = "url(icons/chat.png)"; //change!!
-            panel.style.backgroundColor = "aqua"; //change!!
+            msg.style.backgroundImage = "url(chat.png)"; //change!!
+            panel.style.backgroundColor = "green"; 
             } else {
             msg.style.paddingLeft = "20px";
             }
