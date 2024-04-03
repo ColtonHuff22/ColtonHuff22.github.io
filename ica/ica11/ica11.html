@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <title>Function start</title>
     <style>
+      body{
+       background-color: bisque ;
+      }
       .msgBox {
         position: absolute;
         top: 50%;
@@ -73,10 +76,12 @@
             
             if (msgType === "warning") {
             msg.style.backgroundImage = 'url(warning.jpg)' ;  //change!!
+            msg.style.backgroundSize = "50px" ;
             panel.style.backgroundColor = "yellow";  
             } else if (msgType === "chat") {
             msg.style.backgroundImage = "url(chat.png)"; //change!!
-            panel.style.backgroundColor = "green"; 
+            msg.style.backgroundSize = "50px" ;
+            panel.style.backgroundColor = "lightgreen"; 
             } else {
             msg.style.paddingLeft = "20px";
             }
