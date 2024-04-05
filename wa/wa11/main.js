@@ -5,7 +5,7 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const file = ['images/img1.jpg', 'images/img2.webp', 'images/img3.jpg', 'images/img4.jpg', 'images/img5.jpg']
+const file = ['images/Img1.jpg', 'images/Img2.webp', 'images/Img3.jpg', 'images/Img4.jpg', 'images/Img5.jpg']
 /* Declaring the alternative text for each image file */
 const altText = ['Mountain with Geometry','Top of Snowy Peak','Autumn Mountain Range','Hanging Lake','Mountain Lake Oasis']
 /* Looping through images */
