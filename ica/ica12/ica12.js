@@ -17,6 +17,7 @@ async function getQuote() {
             throw Error(response.statusText)
         }
         const json = await response.json() ;
+        console.log(json) ;
         console.log(json['question']) ;
         displayQuote(json['question']) ;
         console.log(json['answer']) ;
