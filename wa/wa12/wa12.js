@@ -1,7 +1,8 @@
 const btn =document.querySelector("#js-new-quote") ;
 btn.addEventListener('click', getQuote) ;
-
-
+const space = document.getElementById('image-container') ;
+width= space.offsetWidth ;
+console.log(width) ;
 
 const answerText = document.querySelector("#js-answer-test")
 const endpoint = "	https://api.imgflip.com/get_memes";
@@ -23,7 +24,7 @@ async function getQuote() {
         console.log(json) ;
         console.log(json['data']['memes'][i]['url']) ;
         console.log(json[4]) ;
-        show_image(json['data']['memes'][i]['url'],json['data']['memes'][i]['width'],json['data']['memes'][i]['height'],json['data']['memes'][i]['name']) ;
+        show_image(json['data']['memes'][i]['url'],width,json['data']['memes'][i]['height'],json['data']['memes'][i]['name']) ;
 //        console.log(json['answer']) ;
 //        answer = json['answer'] ;
        // console.log(json['url']) ;
@@ -45,7 +46,7 @@ function show_image(src, width, height,alt) {
     // height, and alt attributes
     img.src = src;
     img.width = width ;
-    img.height = height;
+    //img.height = height;
     img.alt = alt;
 
     // Append the image element
