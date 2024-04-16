@@ -1,8 +1,7 @@
 const btn =document.querySelector("#js-new-quote") ;
 btn.addEventListener('click', getQuote) ;
 
-const btn2 =document.querySelector("#js-tweet") ;
-btn2.addEventListener('click',getAnswer) ;
+
 
 const answerText = document.querySelector("#js-answer-test")
 const endpoint = "	https://api.imgflip.com/get_memes";
