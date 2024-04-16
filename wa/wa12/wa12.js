@@ -8,6 +8,9 @@ const answerText = document.querySelector("#js-answer-test")
 const endpoint = "	https://api.imgflip.com/get_memes";
 
 let answer = '' ;
+function random() {
+    return Math.floor(Math.random() * (99 - 0 + 1));
+  }
 
 async function getQuote() {
     // console.log("test") ;
@@ -17,13 +20,14 @@ async function getQuote() {
             throw Error(response.statusText)
         }
         const json = await response.json() ;
+        const i = random() ;
         console.log(json) ;
-        console.log(json['data']['memes'][0]) ;
+        console.log(json['data']['memes'][i]['url']) ;
         console.log(json[4]) ;
-        show_image(json['url'],json['width'],json['height'],json['name']) ;
+        show_image(json['data']['memes'][i]['url'],json['data']['memes'][i]['width'],json['data']['memes'][i]['height'],json['data']['memes'][i]['name']) ;
 //        console.log(json['answer']) ;
 //        answer = json['answer'] ;
-        console.log(json['url']) ;
+       // console.log(json['url']) ;
 
     }
     catch(err) {
@@ -39,15 +43,21 @@ function show_image(src, width, height,alt) {
     // Set the source, width, 
     // height, and alt attributes
     img.src = src;
-    img.width = width;
+    img.width = width ;
     img.height = height;
     img.alt = alt;
 
     // Append the image element
     // to the body of the document
-    document.body.appendChild(img);
+    //const quoteText = document.querySelector('#js-quote-text') ;
+    //const ansText = document.querySelector('#js-answer-text') ;
+    //quoteText.textContent = img ;
+    //document.body.appendChild(img);
+    const container = document.getElementById("image-container");
+    container.appendChild(img);
 }
-
+// const container = document.getElementById("image-container");
+// container.removeChild() ;
 
 // function displayQuote(quote) {
 //   const quoteText = document.querySelector('#js-quote-text') ;
