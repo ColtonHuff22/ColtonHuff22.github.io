@@ -61,6 +61,9 @@ class Ball {
         const distance= Math.sqrt(dx*dx+dy*dy) ;
         if(distance<this.size+ball.size){
           ball.color=this.color=randomRGB() ; //make them bounce off each other for extra credit
+          this.velX=-(this.velX) ;
+          this.velY=-(this.velY) ;
+
         }
       }
     }
@@ -68,13 +71,13 @@ class Ball {
 }
 
 const balls = [] ;
-while(balls.length < 30) {
-  const size = random(1,50);
+while(balls.length < 40) {
+  const size = random(1,25);
   const ball = new Ball (
     random(0+size,width-size),
     random(0+size,height-size),
-    random(-15,15),
-    random(-15,15),
+    random(-12,12),
+    random(-12,12),
     randomRGB(),
     size,
   );

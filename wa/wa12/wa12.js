@@ -37,6 +37,8 @@ async function getQuote() {
 
 function show_image(src, width, height,alt) {
     // Create a new image element
+    // const container = document.getElementById("image-container");
+    // container.removeChild(img);
     let img = document.createElement("img");
 
     // Set the source, width, 
