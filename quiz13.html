@@ -13,7 +13,6 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
@@ -47,9 +46,9 @@
 
       for (let i = 0; i < cats.length; i++) {  //looping through each cat
         for (const kitten of cats[i].kittens) { 
-          total++;
+          total++; //this counts up our total
           if (kitten.gender === "m") {
-            male++;
+            male++; //this counts just the men
           }
         }
         if (i < cats.length - 1) {
