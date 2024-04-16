@@ -8,6 +8,7 @@ const answerText = document.querySelector("#js-answer-test")
 const endpoint = "	https://api.imgflip.com/get_memes";
 
 let answer = '' ;
+
 async function getQuote() {
     // console.log("test") ;
     try {
@@ -17,7 +18,7 @@ async function getQuote() {
         }
         const json = await response.json() ;
         console.log(json) ;
-        console.log(json['data']) ;
+        console.log(json['data']['memes'][0]) ;
         console.log(json[4]) ;
         show_image(json['url'],json['width'],json['height'],json['name']) ;
 //        console.log(json['answer']) ;
