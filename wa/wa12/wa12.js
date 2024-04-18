@@ -9,7 +9,7 @@ const endpoint = "	https://api.imgflip.com/get_memes";
 
 let answer = '' ;
 document.querySelector('#js-new-quote').onclick =  
-  () => document.querySelector('#image-container').innerHTML = '';
+  () => document.querySelector('#image-container').innerHTML = ''; 
 function random() {
     return Math.floor(Math.random() * (99 - 0 + 1));
   }
