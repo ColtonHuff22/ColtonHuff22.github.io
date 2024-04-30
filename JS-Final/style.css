@@ -64,12 +64,12 @@ button {
 }
 .volUp {
     animation-name:moveit ;
-    animation-duration: 2s ;
+    animation-duration: 3s ;
     animation-iteration-count: infinite;
 }
 .volDown {
     animation-name:moveittwo ;
-    animation-duration: 2s ;
+    animation-duration: 3s ;
     animation-iteration-count: infinite;
 }
 button:hover {
