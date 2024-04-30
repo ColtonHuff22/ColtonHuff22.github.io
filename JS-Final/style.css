@@ -82,7 +82,7 @@ button:hover {
         margin-top: 0 ;
     }
     50%{
-        margin-top:50% ;
+        margin-top:25% ;
     }
     to {
         margin-top: 0 ;
@@ -90,12 +90,12 @@ button:hover {
 }
 @keyframes moveittwo {
     from {
-        margin-top: 50% ;
+        margin-top: 25% ;
     }
     50%{
         margin-top:0% ;
     }
     to {
-        margin-top: 50% ;
+        margin-top: 25% ;
     }
 }
