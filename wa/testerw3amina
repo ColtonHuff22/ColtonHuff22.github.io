@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+		How to position a div at
+		specific coordinates?
+	</title>
+
+	<style>
+		#GFG_DIV {
+			background: green;
+			height: 50px;
+			width: 80px;
+			margin: 0 auto;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color:green;">
+		GeeksforGeeks
+	</h1>
+
+	<h3>
+		Click on button to change 
+		the position of the DIV.
+	</h3>
+
+	<div id="GFG_DIV">
+		This is Div box.
+	</div>
+	<br>
+
+	<button onClick="GFG_Fun()">
+		click here
+	</button>
+	
+	<h3 id="GFG" style="color: green;">sko</h3>
+
+	<script>
+		let elm = document.getElementById("GFG");
+
+		function GFG_Fun() {
+			let x = 0;
+			let y = 0;
+			let el = document.getElementById('GFG_DIV');
+			el.style.position = "absolute";
+			el.style.left = x + 'px';
+			el.style.top = y + 'px';
+			elm.innerHTML = "Position of element is changed.";
+		}
+	</script>
+</body>
+
+</html>

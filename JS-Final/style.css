@@ -21,6 +21,10 @@ main {
     text-align: center;
     padding:5vh;
 }
+canvas {
+    width:75vw ;
+    height:60vh ;
+}
 
 .volDisplay{
     width:50vw ;
@@ -33,9 +37,9 @@ main {
 }
 
 .interface{
-    width: 50vw ;
+    width: 75vw ;
     height:60vh ;
-    background-color:floralwhite;
+ /*   background-color:floralwhite; */
     margin:auto ;
     padding-top: 5%;
     padding-bottom: 0%;
@@ -47,8 +51,8 @@ main {
     color:salmon ;
 }
 button {
-    position: absolute;
-    left:10% ;
+    position: relative;
+    left:10% ; 
     color: white;
     background-color: black;
     margin:auto ;
@@ -58,25 +62,31 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     text-align: center;
-    width: 80%;
+    width: 40%;
     font-size: 20px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
+
+
 .volUp {
+    /*
     animation-name:moveit ;
     animation-duration: 3s ;
     animation-iteration-count: infinite;
+    */
+    margin-top: 15%;
 }
 .volDown {
     animation-name:moveittwo ;
     animation-duration: 3s ;
     animation-iteration-count: infinite;
 }
+
 button:hover {
     background-color: salmon;
     color: black ;
 }
-
+/*
 @keyframes moveit {
     from {
         margin-top: 0 ;
@@ -99,3 +109,4 @@ button:hover {
         margin-top: 25% ;
     }
 }
+*/
