@@ -22,7 +22,7 @@ function up() {
         vol +=random(-1,9) ;
     }
     if(vol < 96) {
-        vol +=random(-1,3) ;
+        vol +=random(0,3) ;
     }
     volume.innerHTML = vol ;
  //   volume.append(vol) ;
@@ -36,7 +36,7 @@ function down() {
         vol -=random(-1,9) ;
     }
     if(vol > 4) {
-        vol -=random(-1,3) ;
+        vol -=random(0,3) ;
     }
     volume.innerHTML = vol ;
     console.log(vol) ;
